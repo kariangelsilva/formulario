@@ -1,0 +1,198 @@
+:host {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form,
+.summary-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #dc2626;
+}
+
+input.ng-valid.ng-touched {
+  border-color: #16a34a;
+}
+
+.password-field {
+  display: flex;
+  gap: 0.5rem;
+
+  input {
+    flex: 1;
+  }
+}
+
+.toggle-visibility {
+  padding: 0 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f4f6f9;
+  color: #333;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.strength-indicator {
+  margin-top: 0.5rem;
+
+  small {
+    display: block;
+    margin-top: 0.3rem;
+    color: #555;
+  }
+}
+
+.strength-bar {
+  height: 6px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  transition: 0.2s;
+
+  &.level-1 {
+    width: 33%;
+    background: #dc2626;
+  }
+
+  &.level-2 {
+    width: 66%;
+    background: #f59e0b;
+  }
+
+  &.level-3 {
+    width: 100%;
+    background: #16a34a;
+  }
+}
+
+.checkbox-group {
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    color: #333;
+    cursor: pointer;
+  }
+
+  input[type='checkbox'] {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
+
+button[type='submit'] {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover:not(:disabled) {
+    background: #1d4ed8;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+}
+
+.error-messages {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.summary-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.summary-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+
+  li {
+    padding: 0.6rem 0.8rem;
+    background: #f4f6f9;
+    border-radius: 8px;
+    color: #333;
+  }
+}
+
+.summary-card button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background: #15803d;
+  }
+}
